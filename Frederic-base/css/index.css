@@ -1,0 +1,130 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  color: var(--white);
+}
+:root { 
+  --white: #ffffff; 
+  --grey: #808080; 
+  --black: #000000; 
+}
+
+body {
+  background: var(--black) url("../images/img-1.png");
+  background-position: top;
+  background-position: 75% 20%;
+  font-family: 'Bodoni Moda', serif;
+  
+}
+nav{
+  display: flex;
+  margin: 20px;
+}
+
+#logo{
+  font-size: 40px;
+  font-weight: bold;
+  flex: 1 1 0%;
+  letter-spacing: -0.3em;
+
+}
+div.links{
+  
+  flex: 7 7 0%;
+  
+}
+
+div a{
+  display: inline-flex;
+text-decoration: none;
+font-size: 16px;
+margin: 20px;
+}
+
+
+
+div.text{
+ font-size: 55px;
+width: 500px;
+margin-left: 205px; 
+line-height: 0.8;
+}
+
+p{
+  width: 500px;
+  margin-left: 205px; 
+  margin-top: 50px;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Roboto';
+ 
+}
+
+button{
+  margin-left: 205px; 
+  background-color: #2C74FF;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+ margin-top: 20px;
+  
+}
+#cards{
+display: flex;
+margin-left: 205px; 
+margin-top: 50px;
+height:150px;
+text-align: center;
+
+}
+.colaboraciones{
+  flex-basis: 292px;
+  background: url('../images/img-3.png');
+}
+
+div.colaboraciones h3, div.teoria h3{
+  margin-top: 30%;
+}
+div.experimentos h3{
+  margin-top: 40%;
+}
+.experimentos{
+  flex-basis: 292px;
+  background-color: red;
+  background: url('../images/img-2.png');
+}
+.teoria{
+  flex-basis: 292px;
+  background-color: blue;
+  background: url('../images/img-4.png');
+}
+
+.overlay, .overlay_exp {
+  position: relative;
+  z-index: 0;
+}
+
+.overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    /* !!! */
+    z-index: -1;
+}
+.overlay_exp::after {
+  content: '';
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: #000;
+  opacity: .6;
+  z-index: -1;
+}
